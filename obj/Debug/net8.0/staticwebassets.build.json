@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "X/cviYcFKyfN/ZG9STD8sbvfD+TqPwlTzQB9/N94jHo=",
+  "Source": "TodoApp",
+  "BasePath": "_content/TodoApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoApp\\wwwroot",
+      "Source": "TodoApp",
+      "ContentRoot": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\",
+      "BasePath": "_content/TodoApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\css\\style.css",
+      "SourceId": "TodoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\",
+      "BasePath": "_content/TodoApp",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ilp48z3gmj",
+      "Integrity": "lv4XFFeL9FBxHkcHCcSPeHHr2D4PeJl9JgAQL7I2g5U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\index.html",
+      "SourceId": "TodoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\",
+      "BasePath": "_content/TodoApp",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7q0ydtwkrh",
+      "Integrity": "0QYIAlX/Q/GB9a3cnOx8Wn7EdipXQ9P4ADhpVpBsG8g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\js\\app.js",
+      "SourceId": "TodoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\",
+      "BasePath": "_content/TodoApp",
+      "RelativePath": "js/app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6wutp9ffph",
+      "Integrity": "WpH1IFQQu42fMvdse/WtcAiUBBGm7aUzyrn4EVywlgQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lv4XFFeL9FBxHkcHCcSPeHHr2D4PeJl9JgAQL7I2g5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Apr 2026 17:47:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lv4XFFeL9FBxHkcHCcSPeHHr2D4PeJl9JgAQL7I2g5U="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.ilp48z3gmj.css",
+      "AssetFile": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lv4XFFeL9FBxHkcHCcSPeHHr2D4PeJl9JgAQL7I2g5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Apr 2026 17:47:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilp48z3gmj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lv4XFFeL9FBxHkcHCcSPeHHr2D4PeJl9JgAQL7I2g5U="
+        }
+      ]
+    },
+    {
+      "Route": "index.7q0ydtwkrh.html",
+      "AssetFile": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0QYIAlX/Q/GB9a3cnOx8Wn7EdipXQ9P4ADhpVpBsG8g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Apr 2026 17:48:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7q0ydtwkrh"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0QYIAlX/Q/GB9a3cnOx8Wn7EdipXQ9P4ADhpVpBsG8g="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0QYIAlX/Q/GB9a3cnOx8Wn7EdipXQ9P4ADhpVpBsG8g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Apr 2026 17:48:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0QYIAlX/Q/GB9a3cnOx8Wn7EdipXQ9P4ADhpVpBsG8g="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.6wutp9ffph.js",
+      "AssetFile": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WpH1IFQQu42fMvdse/WtcAiUBBGm7aUzyrn4EVywlgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Apr 2026 17:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6wutp9ffph"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WpH1IFQQu42fMvdse/WtcAiUBBGm7aUzyrn4EVywlgQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\alict\\Desktop\\Yeni klasör (2)\\TodoApp\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WpH1IFQQu42fMvdse/WtcAiUBBGm7aUzyrn4EVywlgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Apr 2026 17:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WpH1IFQQu42fMvdse/WtcAiUBBGm7aUzyrn4EVywlgQ="
+        }
+      ]
+    }
+  ]
+}
