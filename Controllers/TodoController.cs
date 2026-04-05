@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using TodoApp.Data;
 using TodoApp.Models;
 
 namespace TodoApp.Controllers;
@@ -7,45 +9,54 @@ namespace TodoApp.Controllers;
 [Route("api/todo")]
 public class TodoController : ControllerBase
 {
-    private static readonly List<Todo> _todos = new();
-    private static int _nextId = 1;
+    private readonly AppDbContext _context;
+
+    public TodoController(AppDbContext context)
+    {
+        _context = context;
+    }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Todo>> GetAll()
+    public async Task<ActionResult<IEnumerable<Todo>>> GetAll()
     {
-        return Ok(_todos);
+        return await _context.Todos.ToListAsync();
     }
 
     [HttpPost]
-    public ActionResult<Todo> Create(Todo todo)
+    public async Task<ActionResult<Todo>> Create(Todo todo)
     {
-        todo.Id = _nextId++;
         todo.CreatedAt = DateTime.UtcNow;
-        _todos.Add(todo);
+        _context.Todos.Add(todo);
+        await _context.SaveChangesAsync();
+        
         return CreatedAtAction(nameof(GetAll), new { id = todo.Id }, todo);
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(int id, Todo updatedTodo)
+    public async Task<IActionResult> Update(int id, Todo updatedTodo)
     {
-        var existingTodo = _todos.FirstOrDefault(t => t.Id == id);
+        var existingTodo = await _context.Todos.FindAsync(id);
         if (existingTodo == null)
             return NotFound();
 
         existingTodo.Title = updatedTodo.Title;
         existingTodo.IsCompleted = updatedTodo.IsCompleted;
 
+        await _context.SaveChangesAsync();
+
         return NoContent();
     }
 
     [HttpDelete("{id}")]
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        var todo = _todos.FirstOrDefault(t => t.Id == id);
+        var todo = await _context.Todos.FindAsync(id);
         if (todo == null)
             return NotFound();
 
-        _todos.Remove(todo);
+        _context.Todos.Remove(todo);
+        await _context.SaveChangesAsync();
+
         return NoContent();
     }
 }

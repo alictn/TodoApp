@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: todo-api
+    env: docker
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    plan: free # Change to starter/standard if needed
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false # Render dashboard'da "Environment Variables" alanından MS SQL bağlantı dizenizi girmelisiniz.
