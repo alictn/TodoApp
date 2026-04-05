@@ -14,10 +14,21 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://*:{port}");
+
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    context.Database.EnsureCreated();
+    try 
+    {
+        var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        context.Database.EnsureCreated();
+        Console.WriteLine("Database check completed successfully.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Database EnsureCreated failed: {ex.Message}");
+    }
 }
 
 // Configure the HTTP request pipeline.
